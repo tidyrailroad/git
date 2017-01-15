@@ -4,6 +4,8 @@ RUN \
     apk update && \
     apk upgrade && \
     apk add git && \
+    echo -en '!/bin/sh\n\nstat .\n/usr/bin/git ${@}' > /usr/local/bin/entrypoint.sh && \
+    chmod 0555 /usr/local/bin/entrypoint.sh && \
     true
 ENTRYPOINT ["/usr/bin/git"]
 CMD []
