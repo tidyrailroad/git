@@ -1,4 +1,4 @@
-#!/bin/sh
+<!--
 # Copyright © (C) 2017 Emory Merryman <emory.merryman@gmail.com>
 #   This file is part of git.
 #
@@ -14,12 +14,6 @@
 #
 #   You should have received a copy of the GNU General Public License
 #   along with git.  If not, see <http://www.gnu.org/licenses/>.
-FROM emorymerryman/base:0.2.3
-MAINTAINER Emory Merryman emory.merryman@gmail.com
-RUN \
-    apk update && \
-    apk upgrade && \
-    apk add git && \
-    true
-ENTRYPOINT ["/usr/bin/git"]
-CMD []
+-->
+
+# git
